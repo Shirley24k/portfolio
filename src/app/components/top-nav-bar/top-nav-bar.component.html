@@ -1,0 +1,22 @@
+<div class="top-nav-bar-container">
+    <a href="#" class = "logo"><img src="favicon.png"> 
+        <p class="name">{{displayText}}</p>
+    </a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="top-nav-bar-buttons">
+        <ul class="nav-buttons">
+            <li>
+                <a href="#about-me" (click)="setActive('about-me')">About Me</a> <!--description + skills-->
+            </li>
+            <li>
+                <a href="#experience" (click)="setActive('experience')">Experience</a> <!--past competition, intern-->
+            </li>
+            <li>
+                <a href="#projects" (click)="setActive('projects')">Past Projects</a>
+            </li>
+            <li>
+                <a href="#contact" (click)="setActive('contact')">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,41 @@
+.skills-container{
+
+    .skills-icons-in-row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 60px;
+        border: 1px solid black;
+
+        .skills-icon-name{
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            position: relative;
+            margin: 25px;
+            padding: 20px;
+            width: 110px;
+            height: auto;
+            background-color: rgb(244, 237, 221);
+            border-radius: 50%;
+
+            img{
+                margin: 0 auto;
+                width: 80px;
+                height: auto;
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+
+                &:hover {
+                    -webkit-filter: grayscale(0);
+                    filter: grayscale(0);
+                }
+            }
+
+            p{
+                text-align: center;
+                font-weight: 700;
+                margin: 5px;
+            }
+        }
+    }
+}
