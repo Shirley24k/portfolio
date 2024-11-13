@@ -1,15 +1,39 @@
 <div class="projects" id="projects">
     <div>
-        <h2>Featured Projects</h2>
-        <!--Show section by section (in vertical flex direction)
-        images with slider
-        brief description
-        list out the languages and tools used-->
-        <ul>
-            <li>EzPz Event Planner App</li>
-            <li>Watsis Personal Care Marketplace</li>
-            <li>Personal Portfolio</li>
-        </ul>
-        <p>To view more, visit my <a href="www.github.com">Github</a></p>
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="project-container" *ngFor="let project of projectsData;">
+            <div *ngIf="project.projectImg && project.projectImg.length > 0" class="images-container">
+                <img *ngFor="let image of project.projectImg; let i=index"
+                    [src]="image.imageSrc" [alt]="image.imageAlt" [style.width.px]="image.width"
+                    [ngClass]="{'image-active': project.selectedIndex === i}"
+                    class="fade"
+                >
+
+                <div *ngIf="indicators" class="carousel-dot-container">
+                    <span *ngFor="let dot of project.projectImg; let i=index"
+                        class="dot"
+                        [ngClass]="{'active': project.selectedIndex === i}"
+                        (click)="selectedImage(project, i)"
+                    >
+
+                    </span>
+                </div>
+            </div>
+
+            <div class="text-container">
+                <h2>{{project.project_name}}</h2>
+                <p>{{project.project_description}}</p>
+                <h3>Tools and languages</h3>
+                <div class="tools">
+                    <div class="tools-tag" *ngFor="let tag of project.tags">{{tag}}</div>
+                </div>
+                <div>
+                    <a href="{{project.project_link}}">View it live!</a>
+                </div>
+            </div>
+        </div>
+        
+        <p>To view more, visit my <a href="https://github.com/Shirley24k">Github</a></p>
     </div>
 </div>

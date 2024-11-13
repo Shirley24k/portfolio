@@ -1,31 +1,58 @@
-.about-me-container{
+.container{
+    height: 800px;
     display: flex;
-    flex-direction: row;
-    height: 500px;
-    margin: 120px 50px;
-}
-
-.about-me-description{
-    margin: 0 30px;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-}
+    
+    h2{
+        font-size: 40px;
+        font-weight: 800;
+        text-align: center;
+        word-spacing: 20px;
+    }
 
-.about-me-description h2{
-    font-size: 30px;
-    font-weight: 800;
-}
+    .about-me-container{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin-bottom: 50px;
 
-.about-me-description p{
-    text-align: justify;
-    font-size: 20px;
-}
+        .about-me-description{
+            justify-content: center;
+            align-self: center;
+            text-align: justify;
+            font-size: 20px;
+            line-height: normal;
+        }
 
-.profile-picture{
-    width: 300px;
-    height: 300px;
-    margin-left: 6rem;
-    border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    align-items: center;
+        .profile-picture{
+            width: 280px;
+            height: 280px;
+            margin-left: 50px;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            align-items: center;
+        }
+    }
+
+    .cv-button{
+        width: 100%;
+        background-color: rgb(40, 5, 109);
+        margin: 20px 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        
+        button{
+          background-color: transparent;
+          border: none;
+          color: white;
+          font-size: 20px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
 }
