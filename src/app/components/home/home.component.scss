@@ -1,29 +1,54 @@
-.home-header {
+.container{
+  width: 100vw;
+  min-height: 100vh;
+  padding: 60px 0;
+  overflow-x: hidden;
+
+  .home{
     // background-image: url('path-to-your-background-image.jpg');
     background-size: cover; /* Ensures the background covers the entire div */
     background-position: center; /* Centers the background image */
     height: 100vh; /* Full viewport height */
-    display: flex;
-    justify-content: center; /* Centers the profile image horizontally */
-    align-items: center; /* Centers the profile image vertically */
-    position: relative;
-  }
+      
+    .home-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; /* Centers the profile image horizontally */
+      align-items: center; /* Centers the profile image vertically */
+      position: relative;
   
-.profile-picture {
-    width: 150px; /* Adjust the size of your profile picture */
-    height: 150px;
-    border-radius: 50%; /* Makes the image circular */
-    border: 4px solid white; /* Optional: Add a border around the profile picture */
+      .profile-picture {
+        width: 150px; /* Adjust the size of your profile picture */
+        height: 150px;
+        border-radius: 50%; 
+        border: 4px solid white; /* Optional: Add a border around the profile picture */
+        }
+  
+        .header-content {
+          
+          .name{
+            
+          }
+        }
+      
     }
   
-.home-content {
+    
+  }
+  
+  .about-me{
+    background-color: rgba(239, 230, 245, 0.703);
+  }
 
-}
+  .skills{
+    background-color: rgb(40, 5, 109);
+  }
 
-.name {
+  .projects{
+    background-color: rgba(239, 230, 245, 0.703);
+  }
 
-}
-
-.home-description {
-
+  .contact{
+    background-color: rgb(40, 5, 109);
+  }
 }
