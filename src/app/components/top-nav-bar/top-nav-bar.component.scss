@@ -6,7 +6,7 @@
     z-index: 10;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(249, 243, 233);
+    background-color: #efece9;
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
 
@@ -20,13 +20,14 @@
 .logo img{
     width: 50px;
     height: 50px;
-    margin-right: 15px;
+    margin: 0 15px;
 }
 
 .logo .name{
-    color: rgb(184, 139, 216);
-    font-size: 20px;
-    font-weight: bolder;
+    color: #7d91a6;
+    font-size: 23px;
+    font-weight: 800;
+    font-family: Doto;
 }
 
 .top-nav-bar-buttons{
@@ -39,7 +40,7 @@
     flex-direction: row;
     list-style-type: none;
     height: 100%;
-    background-color: rgb(249, 243, 233);
+    background-color: #efece9;
     padding: 0;
     margin: 0;
 }
@@ -50,7 +51,7 @@
 
 .nav-buttons li a{
     display: flex;
-    color: rgb(184, 139, 216);
+    color: #7d91a6;
     font-size: 15px;
     font-weight: bold;
     padding: 25px 25px;
@@ -59,7 +60,7 @@
 
 .nav-buttons li a:hover,
 .nav-buttons li a.active{
-    color: rgb(110, 50, 152);
-    border-bottom: 0.2rem solid rgb(110, 50, 152);
+    color: #465169;
+    border-bottom: 0.2rem solid #465169;
     padding-bottom: 10px;
 }
