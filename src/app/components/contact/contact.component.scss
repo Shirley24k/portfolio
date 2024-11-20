@@ -1,5 +1,10 @@
 .contact-container{
     padding: 20px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 
     .contact-body{
         display: flex;
@@ -11,6 +16,8 @@
 
         .contact-body-header{
             text-align: center;
+            color: white;
+            margin: 20px;
 
             h2{
                 font-size: 25px;
@@ -25,10 +32,7 @@
         .contact-body-content{
             display: flex;
             flex-direction: row;
-
-            img{
-
-            }
+            margin-top: 40px;
 
             .contact-form{
                 display: flex;
@@ -38,7 +42,7 @@
                 margin: 0 auto;
                 padding: 15px;
                 border-radius: 10px;
-                background-color: rgb(249, 243, 233);
+                background-color: #e5eaef;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
                 mat-form-field{
@@ -47,7 +51,7 @@
 
                     mat-label{
                         font-size: 15px;
-                        color: rgb(23, 1, 103);
+                        color: #0f2455c0;
                         font-weight: 500;
                     }
 
@@ -67,13 +71,44 @@
                 .submitBtn{
                     margin-bottom: 20px;
                     border-radius: 10px;
-                    background-color: rgba(23, 1, 103, 0.884);
+                    background-color: #0f2455c0;
                     color: white
                 }
 
                 .submitBtn:hover{
-                    background-color: rgb(23, 1, 103);
+                    background-color: #0f2455;
                 }
+            }
+
+            .right-content{
+                margin-left: 60px;
+                justify-items: center;
+
+                img{
+                    color: white;
+                    width: auto;
+                    height: 400px;
+                    align-self: center;
+                }
+
+                .contact-info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-self: left;
+                    margin-left: 40px;
+                    margin-top: 40px;
+                    
+                    p{
+                        font-size: 15px;
+                        color: white;
+                        font-weight: 400;
+                        i{
+                            padding-right: 5px;
+                        }
+                    }
+
+                }
+
             }
         }
 
