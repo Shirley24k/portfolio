@@ -128,14 +128,11 @@
         
     }
 }
-
 }
 
 ::ng-deep mat-spinner circle {
-    stroke: white !important; /* Set the spinner color to white */
+    stroke: white !important;
 }
-
-
 
 @media(max-width: 760px){
     .contact-container{
