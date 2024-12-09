@@ -15,6 +15,7 @@ export class ContactComponent {
   serviceId = environment.mailService;
   templateId = environment.templateId;
   private _snackBar = inject(MatSnackBar);
+  loading: boolean = false
 
   constructor(private fb: FormBuilder) {}
 
@@ -23,23 +24,32 @@ export class ContactComponent {
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
-    });
+    })
   }
 
   onSubmit = async (): Promise<void> => {
     if (this.contactForm.valid) {
-      emailjs.init(this.key);
-      const formData = this.contactForm.value;
-      let response = await emailjs.send(this.serviceId, this.templateId, {
-        from_name: formData.name,
-        from_email: formData.email,
-        message: formData.message,
-      });
-      this._snackBar.open('Message sent successfully', '', { duration: 5000 });
-      this.contactForm.reset();
-    }
-    else{
+      this.loading = true;
+      try {
+        emailjs.init(this.key);
+        const formData = this.contactForm.value;
+        const response = await emailjs.send(this.serviceId, this.templateId, {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        });
+
+        this._snackBar.open('Message sent successfully', '', { duration: 5000 });
+        this.contactForm.reset();
+      } catch (error) {
+        this._snackBar.open('Failed to send message. Please try again.', '', {
+          duration: 5000,
+        });
+      } finally {
+        this.loading = false; // Stop loading
+      }
+    } else {
       this.contactForm.markAllAsTouched()
     }
-  };
+  }
 }

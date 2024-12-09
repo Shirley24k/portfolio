@@ -26,7 +26,7 @@
 .logo .name{
     color: #7d91a6;
     font-size: 23px;
-    font-weight: 800;
+    font-weight: 900;
     font-family: Doto;
 }
 
@@ -63,4 +63,53 @@
     color: #465169;
     border-bottom: 0.2rem solid #465169;
     padding-bottom: 10px;
+}
+
+#menu{
+    font-size: 20px;
+    cursor: pointer;
+    color: #465169;
+    align-self: center;
+    display: none;
+    margin-right: 20px;
+}
+
+@media(max-width: 800px){
+    #menu{
+        display: block;
+    }
+
+    .top-nav-bar-buttons{
+        position: fixed;
+        top: 50px;
+        right: -120%;
+        width: 65%;
+        max-width: 300px;
+        height: 100%;
+        background-color: #393f4d;
+        transition: all 0.5s ease;
+
+        .nav-buttons{
+            flex-flow: column;
+            justify-content: flex-start;
+
+            li{
+                text-align: center;
+                width: 100%;
+                border-radius: 0.5rem;
+                
+                a{
+                    display: block;
+                    padding: 20px;
+                    text-align: left;
+                    color: #465169;
+                    font-size: 15px;
+                }
+            }
+        }
+        &.collapsed{
+            right: 0;
+        }
+    }
+
 }

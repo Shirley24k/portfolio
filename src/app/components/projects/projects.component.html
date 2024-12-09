@@ -5,6 +5,12 @@
     <div
       *ngIf="project.projectImg && project.projectImg.length > 0"
       class="images-container"
+      data-aos="zoom-in-up"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+      data-aos-easing="ease forwards"
+      data-aos-offset="100"
+      data-aos-once="true"
     >
       <img
         *ngFor="let image of project.projectImg; let i = index"
@@ -26,15 +32,20 @@
       </div>
     </div>
 
-    <div class="text-container">
+    <div
+      class="text-container"
+      data-aos="fade-right"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+      data-aos-easing="ease forwards"
+      data-aos-offset="100"
+      data-aos-once="true"
+    >
       <h2>{{ project.project_name }}</h2>
       <p>{{ project.project_description }}</p>
       <h3>Tools and languages</h3>
       <div class="tools">
         <div class="tools-tag" *ngFor="let tag of project.tags">{{ tag }}</div>
-      </div>
-      <div>
-        <a href="{{ project.project_link }}">View it live!</a>
       </div>
     </div>
   </div>

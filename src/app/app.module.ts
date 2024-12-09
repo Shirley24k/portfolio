@@ -6,6 +6,7 @@ import { MatButtonModule, MatIconButton } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -37,6 +38,7 @@ import { TopNavBarComponent } from './components/top-nav-bar/top-nav-bar.compone
     MatButtonModule,
     MatIconButton,
     MatIconModule,
+    MatProgressSpinnerModule
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
