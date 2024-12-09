@@ -1,25 +1,59 @@
 <div class="container">
-  <h2>- About Me -</h2>
   <div class="about-me-container" id="about-me">
-    <p class="about-me-description">
-      As a dedicated software developer, I specialize in web and mobile
-      application development, with a strong focus on building efficient,
-      user-friendly solutions. My expertise extends to data mining and cloud
-      computing, enabling me to create scalable applications that leverage data
-      for informed decision-making. I am also skilled in software testing,
-      ensuring that the applications I develop meet high standards of quality
-      and performance. Passionate about innovation, I’m always exploring the
-      latest technologies to deliver impactful digital experiences.
-    </p>
-
     <img
       class="profile-picture"
       src="images/profile-picture.jpg"
       alt="profile-picture"
+      data-aos="zoom-in"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+      data-aos-easing="ease forwards"
+      data-aos-offset="100"
+      data-aos-once="true"
     />
-  </div>
-
-  <div class="cv-button">
-    <button (click)="DownloadCV()">Click Here to Download My CV</button>
+    <div class="about-me-content">
+      <h2>About Me</h2>
+      <p
+        class="about-me-description"
+        data-aos="fade-left"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease forwards"
+        data-aos-offset="100"
+        data-aos-once="true"
+      >
+        I'm Rui Luan (Shirley), currently pursuring a Bachelor's degree in
+        Software Engineering at Universiti Tunku Abdul Rahman (UTAR). I
+        speacialize in web and mobile app development, with strong focus on data
+        mining and cloud computing. I'm constantly exploring new technologies to
+        stay at the forefront of innovation. When I'm not coding, I enjoy city
+        walks and photography.
+      </p>
+      <div
+        class="contact-info"
+        data-aos="fade-up-left"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease forwards"
+        data-aos-offset="100"
+        data-aos-once="true"
+      >
+        <p>
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          +6017-7220 232
+        </p>
+        <p>
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          kuik0224&#64;gmail.com
+        </p>
+        <p>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          Selangor, Malaysia
+        </p>
+      </div>
+      <div class="cv-button">
+        <button mat-raised-button (click)="DownloadCV()">Resume</button>
+      </div>
+    </div>
   </div>
 </div>

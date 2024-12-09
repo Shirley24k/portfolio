@@ -2,48 +2,91 @@
   <app-top-nav-bar></app-top-nav-bar>
 
   <section class="home" id="home">
-    
     <div class="home-header">
       <div class="header-content">
-        <h1>
-          Hi! <br />
-          <span class="name">Rui Luan</span> here.
-        </h1>
-        <h2>
-          <span class="job-title">Software Engineering</span><br />Student
+        <h2
+          data-aos="fade-down-right"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+        >
+          A
+          <span class="job-title">Software Engineering Student</span>
         </h2>
+        <br />
+        <h1
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+        >
+          Hello, I'm
+          <span class="name">Rui Luan</span>
+        </h1>
+        <br />
+        <p
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+        >
+          Welcome to my page, nice to meet you! My name is Kuik Rui Luan, but
+          feel free to call me Shirley. Currently, I'm a Year 3 Software
+          Engineering undergraduate with a passion for innovation and a love for
+          exploring new technologies. Now, let's dive into my work and get to
+          know me better!
+        </p>
+        <div class="start-button">
+          <button mat-raised-button (click)="getStart('about-me')">
+            Get Started
+          </button>
+        </div>
       </div>
-      <img
-        src="images/laptop wave.png"
-        alt="profile-picture"
-        class="profile-picture"
-      />
-      <div class="social-media-container">
-        <ul>
-          <li>
-            <a href="https://github.com/Shirley24k" target="_blank">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/kuik-rui-luan-244049282"
-              target="_blank"
-            >
-              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://wa.me/60177220232" target="_blank">
-              <i class="fa fa-whatsapp" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:kuik0224@gmail.com">
-              <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
+      <div class="profile-social-media-container">
+        <img
+          src="images/laptop wave.png"
+          alt="profile-picture"
+          class="profile-picture"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+        />
+        <div class="social-media-container">
+          <ul>
+            <li>
+              <a href="https://github.com/Shirley24k" target="_blank">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/kuik-rui-luan"
+                target="_blank"
+              >
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/60177220232" target="_blank">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:kuik0224@gmail.com">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -67,4 +110,10 @@
   <section class="footer" id="footer">
     <app-footer></app-footer>
   </section>
+
+  <div class="back-to-top" *ngIf="showScroll">
+    <button mat-icon-button (click)="getStart('home')">
+      <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </button>
+  </div>
 </div>

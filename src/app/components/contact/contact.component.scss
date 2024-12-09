@@ -1,6 +1,5 @@
 .contact-container{
-    padding: 20px;
-    height: 800px;
+    padding: 80px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -13,15 +12,18 @@
         align-items: center;
         width: 100%;
         margin: 20px;
+        
 
         .contact-body-header{
             text-align: center;
             color: white;
             margin: 20px;
-
+            font-family: 'Poppins', sans-serif;
+            
             h2{
                 font-size: 25px;
-                font-weight: 800;
+                font-weight: 600;
+                font-family: 'Poppins', sans-serif;
             }
 
             p{
@@ -32,7 +34,7 @@
         .contact-body-content{
             display: flex;
             flex-direction: row;
-            margin-top: 40px;
+            padding-top: 40px;
 
             .contact-form{
                 display: flex;
@@ -44,6 +46,7 @@
                 border-radius: 10px;
                 background-color: #e5eaef;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                box-sizing: border-box;
 
                 mat-form-field{
                     width: 100%;
@@ -68,16 +71,27 @@
                     }
                 }
 
-                .submitBtn{
+                .submitBtn,
+                .loading{
                     margin-bottom: 20px;
                     border-radius: 10px;
                     background-color: #0f2455c0;
-                    color: white
+                    color: white;
+                    padding: 5px;
                 }
 
                 .submitBtn:hover{
                     background-color: #0f2455;
                 }
+
+                mat-spinner{
+                    width: 25px !important;
+                    height: 25px !important;
+                    align-self: center;
+                    justify-self: center;
+                }
+
+                
             }
 
             .right-content{
@@ -102,6 +116,7 @@
                         font-size: 15px;
                         color: white;
                         font-weight: 400;
+                        font-family: 'Poppins', sans-serif;
                         i{
                             padding-right: 5px;
                         }
@@ -110,8 +125,66 @@
                 }
 
             }
-        }
-
         
+    }
+}
+
+}
+
+::ng-deep mat-spinner circle {
+    stroke: white !important; /* Set the spinner color to white */
+}
+
+
+
+@media(max-width: 760px){
+    .contact-container{
+        
+        .contact-body{
+            margin: 0;
+    
+            .contact-body-content{
+                flex-direction: column;
+                
+                .contact-form{
+                    max-width: 500px;
+                    mat-form-field{
+                        
+    
+                        input[matInput],
+                        textarea[matInput]{
+                            padding: 8px;
+                            border-radius: 4px;
+                            font-size: 15px;
+                        }
+    
+                        mat-error{
+                            color: rgb(144, 9, 9);
+                            font-size: 12px;
+                        }
+                    }
+                }
+    
+                .right-content{
+                    margin-left: 0;
+    
+                    img{
+                        display: none;
+                    }
+    
+                    .contact-info{
+                        display: flex;
+                        flex-direction: column;
+                        justify-self: left;
+                        margin-left: 20px;
+                        margin-top: 40px;
+                        
+                    }
+    
+                }
+            }
+    
+            
+        }
     }
 }

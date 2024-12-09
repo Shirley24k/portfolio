@@ -1,8 +1,17 @@
 <div class="skills-container">
-  <h2>- My Skills -</h2>
+  <h2>My Skills</h2>
   <h3>Languages</h3>
   <div class="skills-icons-in-row">
-    <div class="skills-icon-name" *ngFor="let language of languages">
+    <div
+      class="skills-icon-name"
+      *ngFor="let language of languages"
+      data-aos="flip-left"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+      data-aos-easing="ease forwards"
+      data-aos-offset="100"
+      data-aos-once="true"
+    >
       <img [src]="language.imageSrc" [alt]="language.name" />
       <p>{{ language.name }}</p>
     </div>
@@ -10,7 +19,16 @@
 
   <h3>Tools & Framework</h3>
   <div class="skills-icons-in-row">
-    <div class="skills-icon-name" *ngFor="let tool of tools">
+    <div
+      class="skills-icon-name"
+      *ngFor="let tool of tools"
+      data-aos="flip-right"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+      data-aos-easing="ease forwards"
+      data-aos-offset="100"
+      data-aos-once="true"
+    >
       <img [src]="tool.imageSrc" [alt]="tool.name" />
       <p>{{ tool.name }}</p>
     </div>

@@ -1,11 +1,29 @@
 <div class="contact-container" id="contact">
   <div class="contact-body">
-    <div class="contact-body-header">
+    <div
+      class="contact-body-header"
+      [class.loading]="loading"
+      data-aos="fade-down"
+      data-aos-delay="200"
+      data-aos-duration="1000"
+      data-aos-easing="ease forwards"
+      data-aos-offset="100"
+      data-aos-once="true"
+    >
       <h2>Get Connect!</h2>
       <p>Drop me a message here and I'll get back to you in a short time!</p>
     </div>
     <div class="contact-body-content">
-      <form class="contact-form" [formGroup]="contactForm">
+      <form
+        class="contact-form"
+        [formGroup]="contactForm"
+        data-aos="fade-right"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+        data-aos-easing="ease forwards"
+        data-aos-offset="100"
+        data-aos-once="true"
+      >
         <mat-form-field appearance="outline">
           <mat-label>Name</mat-label>
           <input
@@ -66,13 +84,33 @@
           >
         </mat-form-field>
 
-        <button mat-raised-button class="submitBtn" (click)="onSubmit()">
+        <button
+          mat-raised-button
+          class="submitBtn"
+          (click)="onSubmit()"
+          *ngIf="!loading; else loadingTemplate"
+        >
           Send Message
         </button>
+        <ng-template #loadingTemplate>
+          <div class="loading">
+            <mat-spinner></mat-spinner>
+          </div>
+        </ng-template>
       </form>
 
       <div class="right-content">
-        <img src="images/love letter.png" alt="cartoon picture" />
+        <img
+          src="images/love letter.png"
+          alt="contact picture"
+          class="flying-image"
+          data-aos="zoom-in-up"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+        />
         <div class="contact-info">
           <p>
             <i class="fa fa-phone" aria-hidden="true"></i>

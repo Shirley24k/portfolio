@@ -3,23 +3,25 @@
         <img src="favicon.png"> 
         <span class="name">{{displayText}}</span>
     </a>
-    <!-- <div id="menu" class="fa fa-bars"></div> -->
-    <nav class="top-nav-bar-buttons">
+    <div id="menu" class="fa fa-bars" *ngIf="!collapsed" (click)="toggleCollapse()"></div>
+    <div id="menu" class="fa fa-times" *ngIf="collapsed" (click)="closeSidenav()"></div>
+    
+    <nav [ngClass]="{'collapsed': collapsed}" class="top-nav-bar-buttons">
         <ul class="nav-buttons">
             <li>
-                <a href="#home" (click)="setActive('home')">Home</a>
+                <a href="#home" (click)="setActive('home'); closeSidenav()">Home</a>
             </li>
             <li>
-                <a href="#about-me" (click)="setActive('about-me')">About Me</a> 
+                <a href="#about-me" (click)="setActive('about-me'); closeSidenav()">About Me</a> 
             </li>
             <li>
-                <a href="#skills" (click)="setActive('skills')">Skills</a>
+                <a href="#skills" (click)="setActive('skills'); closeSidenav()">Skills</a>
             </li>
             <li>
-                <a href="#projects" (click)="setActive('projects')">Past Projects</a>
+                <a href="#projects" (click)="setActive('projects'); closeSidenav()">Past Projects</a>
             </li>
             <li>
-                <a href="#contact" (click)="setActive('contact')">Contact</a>
+                <a href="#contact" (click)="setActive('contact'); closeSidenav()">Contact</a>
             </li>
         </ul>
     </nav>
