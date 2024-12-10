@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as Aos from 'aos';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'portfolio';
 
   ngOnInit() {
-    Aos.init();
+    AOS.init();
   }
 }
