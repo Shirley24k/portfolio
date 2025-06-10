@@ -51,10 +51,6 @@ export class SkillsComponent {
 
   tools: any[] = [
     {
-      name: "Firebase",
-      imageSrc: "images/firebase.png"
-    },
-    {
       name: "GitHub",
       imageSrc: "images/github.png"
     },
@@ -71,12 +67,28 @@ export class SkillsComponent {
       imageSrc: "images/aws.png"
     },
     {
+      name: "Figma",
+      imageSrc: "images/figma.webp"
+    },
+    {
+      name: "Bootstrap",
+      imageSrc: "images/bootstrap.png"
+    },
+    {
+      name: "Material Tailwind",
+      imageSrc: "images/material-tailwind.png"
+    },
+    {
       name: "Android Studio",
       imageSrc: "images/androidstudio.webp"
     },
     {
       name: "Angular",
       imageSrc: "images/angular.webp"
+    },
+    {
+      name: "Laravel",
+      imageSrc: "images/laravel.png"
     },
     {
       name: "React Native",
@@ -87,9 +99,17 @@ export class SkillsComponent {
       imageSrc: "images/nodejs.png"
     },
     {
+      name: "WampServer",
+      imageSrc: "images/wampserver.png"
+    },
+    {
       name: "PostgreSQL",
       imageSrc: "images/postgresql.png"
-    }
+    },
+    {
+      name: "Firebase",
+      imageSrc: "images/firebase.png"
+    },
   ]
 
 

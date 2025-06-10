@@ -1,15 +1,31 @@
 export const projectsData = [
-    // {
-    //     project_name: "Personal Portfolio",
-    //     project_description: "",
-    //     project_link: "",
-    //     tags: ["Angular", "HTML", "SCSS", "TypeScript"],
-    //     images: []
-    // },
+    {
+        project_name: "Miss DIY",
+        project_description: "An online shopping platform for crafting tools and materials, enabling efficient product management, user authentication, and secure transactions.",
+        project_link: "https://github.com/Shirley24k/MissDIY",
+        tags: ["Laravel", "PHP", "Blade", "Eloqent ORM"],
+        projectImg: [
+            {
+                imageSrc: "images/project3a.png",
+                imageAlt: "Home Page",
+                width: 450
+            },
+            {
+                imageSrc: "images/project3b.png",
+                imageAlt: "Product Page",
+                width: 450
+            },
+            {
+                imageSrc: "images/project3c.png",
+                imageAlt: "Payment Page",
+                width: 450
+            }
+        ]
+    },
     {
         project_name: "EzPz Event Planner App",
         project_description: "An innovative event planner app leveraging Firestore as a cloud database, empowering users to seamlessly host, join, update, and view events. This application is designed to streamline event management while enhances user experience by providing real-time updates and effortless event coordination.",
-        project_link: "https://github.com/Shirley24k/EzPz-Event-Planner-App", //tbc to public repo
+        project_link: "https://github.com/Shirley24k/EzPz-Event-Planner-App", 
         tags: ["Android Studio", "Firebase", "React Native", "TypeScript", "JavaScript", "SQLite"],
         projectImg: [
             {
@@ -48,6 +64,29 @@ export const projectsData = [
             {
                 imageSrc: "images/project1c.png",
                 imageAlt: "Cart Page",
+                width: 450
+            }
+        ]
+    },
+    {
+        project_name: "Mortal Combat Your Writing through 'Flip Book'",
+        project_description: "A portfolio website for Flip Book project conducted by a four-member team at UTAR. This website introduces the project and showcases the entire process from initial concept and planning to final execution.",
+        project_link: "https://mortal-combat-writing-flip-book.netlify.app/",
+        tags: ["HTML", "CSS", "JavaScript", "Netlify"],
+        projectImg: [
+            {
+                imageSrc: "images/project4a.png",
+                imageAlt: "Project Planning",
+                width: 450
+            },
+            {
+                imageSrc: "images/project4b.png",
+                imageAlt: "Impact Page",
+                width: 450
+            },
+            {
+                imageSrc: "images/project4c.png",
+                imageAlt: "Project Recording Page",
                 width: 450
             }
         ]

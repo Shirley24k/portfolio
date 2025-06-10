@@ -50,6 +50,10 @@
             &:hover{
                 background-color: #f4eadc;
                 box-shadow: 1px 1px 5px white;
+                img{
+                    -webkit-filter: grayscale(0);
+                    filter: grayscale(0);
+                }
             }
 
             img{
@@ -58,11 +62,6 @@
                 height: auto;
                 -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);
-
-                &:hover {
-                    -webkit-filter: grayscale(0);
-                    filter: grayscale(0);
-                }
             }
 
             p{
