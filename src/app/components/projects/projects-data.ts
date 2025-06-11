@@ -69,6 +69,29 @@ export const projectsData = [
         ]
     },
     {
+        project_name: "Intelligent Distributed Restocking System",
+        project_description: "Developed for the Google Workspace Hackathon 2024, this project focuses on automated inventory management, featuring real-time inventory level analysis, low stock alerts, and automated restocking from suppliers. It seamlessly integrates with Google Workspace tools to enhance operational efficiency and reduce manual overhead.",
+        project_link: "https://mortal-combat-writing-flip-book.netlify.app/",
+        tags: ["Google Sheets", "Gmail", "Google Apps Script", "Gemini", "Google Cloud"],
+        projectImg: [
+            {
+                imageSrc: "images/project5a.png",
+                imageAlt: "Low Stock Detection",
+                width: 450
+            },
+            {
+                imageSrc: "images/project5b.png",
+                imageAlt: "Restock Request",
+                width: 450
+            },
+            {
+                imageSrc: "images/project5c.png",
+                imageAlt: "Low Stock Alert",
+                width: 450
+            }
+        ]
+    },
+    {
         project_name: "Mortal Combat Your Writing through 'Flip Book'",
         project_description: "A portfolio website for Flip Book project conducted by a four-member team at UTAR. This website introduces the project and showcases the entire process from initial concept and planning to final execution.",
         project_link: "https://mortal-combat-writing-flip-book.netlify.app/",
