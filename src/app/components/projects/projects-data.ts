@@ -1,5 +1,33 @@
 export const projectsData = [
     {
+        project_name: "Web Application for Revenue-Based Financing among Startups",
+        project_description: "A financing platform that offers Revenue-Based Financing (RBF) by intelligently matching startups with suitable investors. The platform ensures secure and trustworthy interactions through robust profile validation processes that prevent scams and fraudulent activity. Key features include automated payment systems to minimize the risk of default, and a recommendation engine that enhances matching efficiency by aligning startup needs with investor preferences.",
+        project_link: "https://github.com/Shirley24k/RBF-web-app/tree/main",
+        tags: ["Laravel", "Reactjs", "Neo4j", "PostgreSQL", "Supabase", "Flask"],
+        projectImg: [
+            {
+                imageSrc: "images/project6a.png",
+                imageAlt: "Analytics Page",
+                width: 450
+            },
+            {
+                imageSrc: "images/project6b.png",
+                imageAlt: "Risk Assessment Page",
+                width: 450
+            },
+            {
+                imageSrc: "images/project6c.png",
+                imageAlt: "Transaction Page",
+                width: 450
+            },
+            {
+                imageSrc: "images/project6d.png",
+                imageAlt: "Proposal Extraction Page",
+                width: 450
+            }
+        ]
+    },
+    {
         project_name: "Miss DIY",
         project_description: "An online shopping platform for crafting tools and materials, enabling efficient product management, user authentication, and secure transactions.",
         project_link: "https://github.com/Shirley24k/MissDIY",
