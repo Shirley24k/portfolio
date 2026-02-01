@@ -2,8 +2,8 @@ export const projectsData = [
     {
         project_name: "Web Application for Revenue-Based Financing among Startups",
         project_description: "A financing platform that offers Revenue-Based Financing (RBF) by intelligently matching startups with suitable investors. The platform ensures secure and trustworthy interactions through robust profile validation processes that prevent scams and fraudulent activity. Key features include automated payment systems to minimize the risk of default, and a recommendation engine that enhances matching efficiency by aligning startup needs with investor preferences.",
-        project_link: "https://github.com/Shirley24k/RBF-web-app/tree/main",
-        tags: ["Laravel", "Reactjs", "Neo4j", "PostgreSQL", "Supabase", "Flask"],
+        project_link: "https://rbf-react-frontend.vercel.app/",
+        tags: ["Laravel", "Reactjs", "Neo4j", "PostgreSQL", "Supabase", "Flask", "Vercel", "Render"],
         projectImg: [
             {
                 imageSrc: "images/project6a.png",
