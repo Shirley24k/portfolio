@@ -46,6 +46,14 @@ export class SkillsComponent {
     {
       name: "MySQL",
       imageSrc: "images/mysql.png"
+    },
+    {
+      name: "PostgreSQL",
+      imageSrc: "images/postgresql.png"
+    },
+    {
+      name: "Clickhouse",
+      imageSrc: "images/clickhouse.svg"
     }
   ]
 
@@ -103,12 +111,12 @@ export class SkillsComponent {
       imageSrc: "images/wampserver.png"
     },
     {
-      name: "PostgreSQL",
-      imageSrc: "images/postgresql.png"
-    },
-    {
       name: "Firebase",
       imageSrc: "images/firebase.png"
+    },
+    {
+      name: "Metabase",
+      imageSrc: "images/metabase.webp"
     },
   ]
 

@@ -17,6 +17,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { TopNavBarComponent } from './components/top-nav-bar/top-nav-bar.component';
+import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { TopNavBarComponent } from './components/top-nav-bar/top-nav-bar.compone
     FooterComponent,
     HomeComponent,
     SkillsComponent,
+    WorkExperienceComponent,
   ],
   imports: [
     BrowserModule,

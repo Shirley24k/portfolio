@@ -1,0 +1,30 @@
+<div class="work-experience-container" id="work-experience">
+  <h2>Work Experience</h2>
+
+  <div class="timeline">
+    <article
+      class="experience-item"
+      *ngFor="let experience of experiences; let i = index"
+      [class.current]="i === 0"
+      data-aos="fade-up"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+      data-aos-easing="ease forwards"
+      data-aos-offset="100"
+      data-aos-once="true"
+    >
+      <div class="timeline-marker"></div>
+      <div class="experience-content">
+        <p class="period">{{ experience.period }}</p>
+        <h3>{{ experience.role }}</h3>
+        <p class="company">{{ experience.company }}, {{ experience.location }}</p>
+
+        <ul>
+          <li *ngFor="let highlight of experience.highlights">
+            {{ highlight }}
+          </li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</div>

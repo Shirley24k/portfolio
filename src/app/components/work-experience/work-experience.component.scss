@@ -1,0 +1,130 @@
+.work-experience-container {
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    color: #071a50;
+    width: 90%;
+    max-width: 960px;
+    margin: 0;
+  }
+
+  .timeline {
+    position: relative;
+    width: 90%;
+    max-width: 960px;
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 10px;
+      bottom: 0;
+      width: 2px;
+      background-color: #c7cff0;
+    }
+  }
+
+  .experience-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    column-gap: 28px;
+
+    .timeline-marker {
+      position: relative;
+      z-index: 1;
+      width: 14px;
+      height: 14px;
+      margin-top: 5px;
+      border: 3px solid #0f2455c0;
+      border-radius: 50%;
+      background-color: #eef1fb;
+    }
+
+    &.current .timeline-marker {
+      background-color: #0f2455c0;
+    }
+
+    .experience-content {
+      padding-bottom: 2px;
+    }
+
+    .period {
+      margin: 0 0 8px;
+      color: #0f2455c0;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    h3 {
+      margin: 0 0 6px;
+      color: #171b3d;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .company {
+      margin: 0 0 20px;
+      color: #58617f;
+      font-size: 21px;
+      font-weight: 400;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+      color: #58617f;
+      line-height: 1.6;
+      list-style-type: circle;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .work-experience-container {
+    h2 {
+      font-size: 34px;
+    }
+
+    .timeline {
+      gap: 42px;
+    }
+
+    .experience-item {
+      column-gap: 20px;
+
+      .period {
+        font-size: 18px;
+      }
+
+      h3 {
+        font-size: 23px;
+      }
+
+      .company {
+        font-size: 18px;
+      }
+
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+}
