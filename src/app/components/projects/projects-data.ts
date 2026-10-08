@@ -1,5 +1,28 @@
 export const projectsData = [
     {
+        project_name: "JobPulse – Smart Job Application Tracker",
+        project_description: "A full-stack job application management platform that streamlines the entire job search process. Features include a Smart Email Parser that auto-extracts company, role, interview dates and meeting links from recruiter emails, an Interactive Kanban Board for visual pipeline management, a 5 Working-Day Follow-Up Alert System with automated Nodemailer notifications, multi-round Interview & Assessment tracking, pipeline conversion analytics, and a 2-week auto 'No Response' status transition engine powered by a background cron rules engine.",
+        project_link: "https://github.com/Shirley24k",
+        tags: ["React", "Vite", "Node.js", "Express", "SQLite", "Tailwind CSS", "Nodemailer", "REST API"],
+        projectImg: [
+            {
+                imageSrc: "images/project7a.png",
+                imageAlt: "Kanban Board View",
+                width: 450
+            },
+            {
+                imageSrc: "images/project7b.png",
+                imageAlt: "Analytics Dashboard",
+                width: 450
+            },
+            {
+                imageSrc: "images/project7c.png",
+                imageAlt: "Email Sync & Alerts Center",
+                width: 450
+            }
+        ]
+    },
+    {
         project_name: "Web Application for Revenue-Based Financing among Startups",
         project_description: "A financing platform that offers Revenue-Based Financing (RBF) by intelligently matching startups with suitable investors. The platform ensures secure and trustworthy interactions through robust profile validation processes that prevent scams and fraudulent activity. Key features include automated payment systems to minimize the risk of default, and a recommendation engine that enhances matching efficiency by aligning startup needs with investor preferences.",
         project_link: "https://rbf-react-frontend.vercel.app/",
@@ -53,7 +76,7 @@ export const projectsData = [
     {
         project_name: "EzPz Event Planner App",
         project_description: "An innovative event planner app leveraging Firestore as a cloud database, empowering users to seamlessly host, join, update, and view events. This application is designed to streamline event management while enhances user experience by providing real-time updates and effortless event coordination.",
-        project_link: "https://github.com/Shirley24k/EzPz-Event-Planner-App", 
+        project_link: "https://github.com/Shirley24k/EzPz-Event-Planner-App",
         tags: ["Android Studio", "Firebase", "React Native", "TypeScript", "JavaScript", "SQLite"],
         projectImg: [
             {
